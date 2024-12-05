@@ -7,8 +7,8 @@ An interactive web application that simulates a tutoring session with an AI stud
 **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/office-hours-ai-tutor.git
-   cd office-hours-ai-tutor
+   https://github.com/yalcintur/cs139-final-project.git
+   cd cs139-final-project
    ```
 Create a .env file with your OpenAI API key:
 
