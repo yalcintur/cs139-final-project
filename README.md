@@ -4,7 +4,7 @@ An interactive web application that simulates a tutoring session with an AI stud
 
 ## Setup Instructions
 
-1. **Clone the repository:**
+**Clone the repository:**
 
    ```bash
    git clone https://github.com/yourusername/office-hours-ai-tutor.git
