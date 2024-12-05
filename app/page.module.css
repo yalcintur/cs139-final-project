@@ -1,0 +1,229 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0 1rem;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .studentInfo {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }  
+  
+  .questionBox {
+    flex: 1;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+  }
+  
+  .chatBox {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chatHistory {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .inputArea {
+    display: flex;
+  }
+  
+  .inputArea input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .inputArea button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .userMessage {
+    text-align: right;
+    margin: 0.5rem 0;
+  }
+  
+  .studentMessage {
+    text-align: left;
+    margin: 0.5rem 0;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .correctAnswer {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .correctAnswer img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .answer {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .answer ol {
+    list-style-type: decimal;
+    padding-left: 1rem;
+  }
+  
+  .answer li {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .selectedStep {
+    background-color: #d3f9d8;
+  }
+  
+  .selectedStepInfo {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .inputArea input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .inputArea button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* app/page.module.css */
+
+/* ... existing styles ... */
+
+.loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .loadingSpinner {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .selectedStepInfo {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+
+  .correctContainer {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .tick {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nextButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nextButton:hover {
+    background-color: #27ae60;
+  }
+  
